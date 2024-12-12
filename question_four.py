@@ -18,13 +18,17 @@ An object is part of a class. You can have multiple objects of the safe class.
 
 sentence = input("Enter sentence: ")
 occurences = sentence.split()
-print(occurences)
+# print(occurences)
 
 
 occurence_dict = {}
 
-for word in sentence:
-    pass
+for word in occurences:
+    if word in occurence_dict:
+        occurence_dict[word]+= 1
+    else:
+        occurence_dict[word] = 1 
+print(occurence_dict)
 
 
 # No.4 (iii)
