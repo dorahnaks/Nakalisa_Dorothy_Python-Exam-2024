@@ -28,7 +28,10 @@ class Car:
     def start_engine(self):
         print("The engine of the car has started")
 
-car_1 = Car(Toyota, mercedece, silver)
-car_1.start_engine
+car_1 = Car('Toyota', 'Hammer', 'Silver')
+print(f"The car brand is: {car_1.brand}")
+print(f"The car name is: {car_1.name}")
+print(f"The color of the car is: {car_1.color}")
+car_1.start_engine()
 
             
